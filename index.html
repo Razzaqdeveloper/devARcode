@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
 
 <body>
@@ -128,35 +129,33 @@
     </div>
   </section>
 
-  <section id="about" class="bg-gray-800 text-white h-screen flex items-center justify-center">
-    <div class="text-center px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-6 pt-8">About Me</h2>
-      <p class="text-lg sm:text-xl text-gray-400 mb-8">
-        I'm Abdur Razzaq, a passionate Web Developer specializing in creating beautiful, user-friendly websites using modern technologies.
-      </p>
+  <section id="about" class="bg-gray-800 text-white py-20 flex items-center justify-center">
+  <div class="text-center px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-6 pt-8">About Me</h2>
+    <p class="text-lg sm:text-xl text-gray-400 mb-8">
+      I'm Abdur Razzaq, a passionate Web Developer specializing in creating beautiful, user-friendly websites using modern technologies.
+    </p>
 
-      <!-- Skills Section -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        <div class="p-4 bg-gray-700 rounded-lg">
-          <h3 class="text-2xl font-semibold text-blue-400 mb-2">React.js</h3>
-          <p class="text-gray-400">I build fast and interactive UIs using React.js, focusing on performance and scalability.</p>
-        </div>
-        <div class="p-4 bg-gray-700 rounded-lg">
-          <h3 class="text-2xl font-semibold text-blue-400 mb-2">Tailwind CSS</h3>
-          <p class="text-gray-400">I use Tailwind CSS to create custom, responsive, and aesthetically pleasing designs.</p>
-        </div>
-        <div class="p-4 bg-gray-700 rounded-lg">
-          <h3 class="text-2xl font-semibold text-blue-400 mb-2">JavaScript</h3>
-          <p class="text-gray-400">I leverage JavaScript to bring interactive elements and dynamic content to life.</p>
-        </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      <div class="p-4 bg-gray-700 rounded-lg">
+        <h3 class="text-2xl font-semibold text-blue-400 mb-2">React.js</h3>
+        <p class="text-gray-400">I build fast and interactive UIs using React.js, focusing on performance and scalability.</p>
       </div>
-
-      <!-- Scroll Button to Next Section -->
-      <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md font-medium">
-        Scroll to Projects
-      </a>
+      <div class="p-4 bg-gray-700 rounded-lg">
+        <h3 class="text-2xl font-semibold text-blue-400 mb-2">Tailwind CSS</h3>
+        <p class="text-gray-400">I use Tailwind CSS to create custom, responsive, and aesthetically pleasing designs.</p>
+      </div>
+      <div class="p-4 bg-gray-700 rounded-lg">
+        <h3 class="text-2xl font-semibold text-blue-400 mb-2">JavaScript</h3>
+        <p class="text-gray-400">I leverage JavaScript to bring interactive elements and dynamic content to life.</p>
+      </div>
     </div>
-  </section>
+    <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md font-medium">
+      Scroll to Projects
+    </a>
+  </div>
+</section>
+
 
   <section id="projects" class="bg-gray-900 text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -168,7 +167,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project 1 -->
         <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <img src="/youtubeBanner.jpeg" alt="Project 1" class="w-full h-48 object-cover rounded-md mb-4">
+          <img src="/youtubeBanner.jpeg" alt="Project 1" class="w-full h-auto object-cover rounded-md mb-4">
           <h3 class="text-2xl font-semibold text-blue-400 mb-2">YouTube-Clone/NewsApi</h3>
           <p class="text-gray-400 mb-4">A dynamic platform created with HTML, Tailwind CSS, JavaScript, and NewsAPI. It features a responsive design, allowing users to search and explore trending news updates effortlessly.</p>
           <a href="https://project-link.com" target="_blank" class="text-blue-600 hover:text-blue-700">View Project</a>
