@@ -4,10 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Abdur Razzaq Portfolio</title>
+  <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    overflow: visible;
+  }
+
+  .pages {
+    padding-top: 80px;
+    /* Match your navbar height */
+  }
+</style>
 
 <body>
 
@@ -23,8 +38,11 @@
           <a href="#hero" class="hover:text-gray-300">Home</a>
           <a href="#about" class="hover:text-gray-300">About</a>
           <a href="#projects" class="hover:text-gray-300">Projects</a>
+          <a href="#services" class="hover:text-gray-300">Services</a>
+          <a href="#testimonials" class="hover:text-gray-300">Testimonials</a>
           <a href="#contact" class="hover:text-gray-300">Contact</a>
         </div>
+
 
         <!-- Mobile Hamburger Menu -->
         <div class="md:hidden">
@@ -104,12 +122,14 @@
       <a href="#hero" class="block px-4 py-2 text-sm hover:bg-gray-700">Home</a>
       <a href="#about" class="block px-4 py-2 text-sm hover:bg-gray-700">About</a>
       <a href="#projects" class="block px-4 py-2 text-sm hover:bg-gray-700">Projects</a>
+      <a href="#services" class="block px-4 py-2 text-sm hover:bg-gray-700">Services</a>
+      <a href="#testimonials" class="block px-4 py-2 text-sm hover:bg-gray-700">Testimonials</a>
       <a href="#contact" class="block px-4 py-2 text-sm hover:bg-gray-700">Contact</a>
     </div>
   </nav>
 
 
-  <section id="hero" class="bg-gray-900 text-white h-[95vh] flex items-center justify-center">
+  <section id="hero" class="pages bg-gray-900 text-white h-[95vh] flex items-center justify-center">
     <div class="text-center px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl sm:text-6xl font-extrabold mb-6">
         Hi, I'm Abdur Razzaq
@@ -128,7 +148,7 @@
     </div>
   </section>
 
-  <section id="about" class="bg-gray-800 text-white h-screen flex items-center justify-center">
+  <section id="about" class="pages bg-gray-800 text-white h-screen flex items-center justify-center opacity-0 translate-y-10 transition duration-700">
     <div class="text-center px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl sm:text-4xl font-bold mb-6 pt-8">About Me</h2>
       <p class="text-lg sm:text-xl text-gray-400 mb-8">
@@ -152,13 +172,11 @@
       </div>
 
       <!-- Scroll Button to Next Section -->
-      <a href="#projects" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md font-medium">
-        Scroll to Projects
-      </a>
+
     </div>
   </section>
 
-  <section id="projects" class="bg-gray-900 text-white py-20">
+  <section id="projects" class="pages bg-gray-900 text-white py-20 opacity-0 translate-y-10 transition duration-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold mb-6">My Projects</h2>
       <p class="text-lg sm:text-xl text-gray-400 mb-12">
@@ -193,7 +211,83 @@
     </div>
   </section>
 
-  <section id="contact" class="bg-gray-800 text-white py-20">
+  <!-- Services Section -->
+  <section id="services" class="pages bg-gray-800 text-white py-20 opacity-0 translate-y-10 transition duration-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6">My Services</h2>
+      <p class="text-lg sm:text-xl text-gray-400 mb-12">
+        I provide a variety of web development services to help bring your ideas to life.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-blue-400 mb-4">Website Development</h3>
+          <p class="text-gray-400">
+            I create modern, responsive websites tailored to meet your business needs.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-blue-400 mb-4">UI/UX Design</h3>
+          <p class="text-gray-400">
+            Designing user-friendly interfaces that enhance user experiences.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-blue-400 mb-4">Web Animation</h3>
+          <p class="text-gray-400">
+            Adding engaging animations to make your website interactive and fun.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="pages bg-gray-900 text-white py-20 opacity-0 translate-y-10 transition duration-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6">What People Say</h2>
+      <p class="text-lg sm:text-xl text-gray-400 mb-12">
+        Hear from some of my satisfied clients and collaborators.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <p class="text-gray-400 italic mb-4">
+            "Working with Abdur Razzaq was a fantastic experience. He delivered a stunning website on time!"
+          </p>
+          <h3 class="text-lg font-semibold text-blue-400">Sajid Rehman</h3>
+          <p class="text-gray-500">KUST, Web Developer</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <p class="text-gray-400 italic mb-4">
+            "Abdur is incredibly talented and professional. Highly recommended for web development!"
+          </p>
+          <h3 class="text-lg font-semibold text-blue-400">Waqas Muhammad</h3>
+          <p class="text-gray-500">UET, Flutter Developer</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <p class="text-gray-400 italic mb-4">
+            "The animations and UI enhancements exceeded our expectations. Great work!"
+          </p>
+          <h3 class="text-lg font-semibold text-blue-400">Zain ul abidin</h3>
+          <p class="text-gray-500">UET, Mern Stack Developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="pages bg-gray-800 text-white py-20 opacity-0 translate-y-10 transition duration-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold mb-6">Contact Me</h2>
       <p class="text-lg sm:text-xl text-gray-400 mb-12">
@@ -303,6 +397,51 @@
       cartModal.classList.toggle("-translate-x-full")
     }
   </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('opacity-100', 'translate-y-0');
+              entry.target.classList.remove('opacity-0', 'translate-y-10');
+            } else {
+              entry.target.classList.remove('opacity-100', 'translate-y-0');
+              entry.target.classList.add('opacity-0', 'translate-y-10');
+            }
+          });
+        },
+        {
+          threshold: 0.1, // Trigger animation when 10% of the section is visible
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    });
+
+
+
+    // Add to your script
+    document.querySelectorAll('nav a').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          const offset = targetElement.offsetTop - 65; // Adjust 80px to match your navbar height
+          window.scrollTo({
+            top: offset,
+            behavior: 'smooth', // Smooth scrolling
+          });
+        }
+      });
+    });
+  </script>
+
   <script src="/main.js"></script>
 </body>
 
