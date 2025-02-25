@@ -323,9 +323,9 @@
   
     <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
     <div>
-      <a title="whatsApp" href="#" target="_blank" class="block w-12 h-12 rounded-full p-1 border-2 border-green-500 transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+      <button id="chatButton" class="block w-12 h-12 rounded-full p-1 border-2 border-green-500 transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
         <img class="object-cover object-center w-full h-full rounded-full" src="/C620F47B-C650-42D2-9547-EBB5ECC02C75.png" />
-      </a>
+      </button>
     </div>
   </div>
 
@@ -382,6 +382,14 @@
       </div>
     </div>
   </footer>
+  
+    <script>
+    document.getElementById('chatButton').addEventListener('click', function() {
+  // Redirect to WhatsApp chat with a pre-filled message
+  window.location.href = 'https://wa.me/923070925248?text=Hi, I would like to chat with you.';
+});
+  </script>
+  
   <script>
     document.getElementById('mobile-menu-button').addEventListener('click', function() {
       const menu = document.getElementById('mobile-menu');
